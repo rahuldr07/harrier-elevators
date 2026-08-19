@@ -1,0 +1,21 @@
+# Hashed-free static assets: images, fonts, css, js.
+# Cache hard but allow revalidation so a redeploy of a changed file is picked up.
+/assets/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# The page itself must never be stale.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()

@@ -1,0 +1,13 @@
+{
+  "name": "Harrier Elevators",
+  "short_name": "Harrier",
+  "description": "Elevator installation, repair, service and AMC in Hyderabad.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#00994d",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/assets/img/harrier.jpg", "sizes": "600x239", "type": "image/jpeg" }
+  ]
+}

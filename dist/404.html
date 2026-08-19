@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Page not found | Harrier Elevators</title>
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <style>
+    /* Self-hosted Google Fonts, latin subset, variable weight axis.
+             Two files replace the 13 render-blocking requests the old @import made. */
+          @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url(/assets/fonts/inter-var.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+          @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url(/assets/fonts/roboto-var.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+  </style>
+  <style>
+    :root { --brand: #00994d; --ink: #14212b; --muted: #5c6b76; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      font-family: 'Roboto', system-ui, sans-serif;
+      color: var(--ink);
+      background: #f5f7f8;
+    }
+    .card { max-width: 540px; text-align: center; }
+    img { width: 120px; height: auto; margin-bottom: 28px; }
+    h1 {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: clamp(56px, 14vw, 92px);
+      font-weight: 800;
+      line-height: 1;
+      margin: 0;
+      color: var(--brand);
+    }
+    h2 {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: clamp(20px, 5vw, 26px);
+      font-weight: 700;
+      margin: 12px 0 10px;
+    }
+    p { color: var(--muted); line-height: 1.65; margin: 0 0 28px; }
+    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    a.btn {
+      display: inline-block;
+      padding: 13px 26px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--brand);
+      transition: opacity .2s;
+    }
+    a.btn:hover { opacity: .85; }
+    a.primary { background: var(--brand); color: #fff; }
+    a.ghost { color: var(--brand); }
+    a.btn:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img src="/assets/img/harrier.jpg" alt="Harrier Elevators" width="600" height="239" />
+    <h1>404</h1>
+    <h2>This floor doesn't exist</h2>
+    <p>
+      The page you were looking for has moved or was never here.
+      Let's get you back to the ground floor.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="/">Back to home</a>
+      <a class="btn ghost" href="tel:+917396325777">Call +91 73963 25777</a>
+    </div>
+  </main>
+</body>
+</html>

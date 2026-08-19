@@ -1,0 +1,15 @@
+# HTTrack scaffolding from the original site capture - not part of the website
+hts-cache/
+hts-log.txt
+backblue.gif
+fade.gif
+/index.html
+
+# The untouched pre-cleanup mirror, kept locally as a backup only
+harrierelevators.vhwebtech.com/
+
+# Local tooling noise
+.playwright-mcp/
+*.png.tmp
+.DS_Store
+Thumbs.db
