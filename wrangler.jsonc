@@ -1,0 +1,17 @@
+{
+  // Static-asset-only Worker: there is no server code, Cloudflare serves
+  // the contents of dist/ directly from its edge network.
+  "name": "harrier-elevators",
+  "compatibility_date": "2026-08-20",
+
+  "assets": {
+    // The website itself. Everything in here is uploaded as-is.
+    "directory": "./dist/",
+
+    // Serve dist/404.html for unknown paths instead of a bare Cloudflare error.
+    "not_found_handling": "404-page",
+
+    // "/about" and "/about/" resolve to the same page.
+    "html_handling": "auto-trailing-slash"
+  }
+}
